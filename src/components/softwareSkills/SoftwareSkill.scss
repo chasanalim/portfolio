@@ -11,21 +11,103 @@
 
 .software-skill-inline {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 30px;
   margin-bottom: 20px;
+
+  .skill-icon {
+    transition: all 0.3s ease-in-out;
+
+    svg {
+      color: $subTitle;
+      transition: all 0.3s ease-in-out;
+    }
+
+    p {
+      color: $subTitle;
+      font-size: 12px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &.laravel:hover {
+      svg, p { color: $laravel; }
+    }
+
+    &.html5:hover {
+      svg, p { color: $html5; }
+    }
+
+    &.css3:hover {
+      svg, p { color: $css3; }
+    }
+
+    &.sass:hover {
+      svg, p { color: $sass; }
+    }
+
+    &.bootstrap:hover {
+      svg, p { color: $bootstrap; }
+    }
+
+    &.javascript:hover {
+      svg, p { color: $javascript; }
+    }
+
+    &.reactjs:hover {
+      svg, p { color: $react; }
+    }
+
+    &.nodejs:hover {
+      svg, p { color: $nodejs; }
+    }
+
+    &.npm:hover {
+      svg, p { color: $npm; }
+    }
+
+    &.mysql:hover {
+      svg, p { color: $mysql; }
+    }
+
+    &.php:hover {
+      svg, p { color: $php; }
+    }
+
+    &.python:hover {
+      svg, p { color: $python; }
+    }
+
+    &.git:hover {
+      svg, p { color: $git ; }
+    }
+
+    &.inertiajs:hover {
+      svg, p { color: $inertia ; }
+    }
+
+    &.vuejs:hover {
+      svg, p { color: $vuejs ; }
+    }
+
+    &.tailwind:hover {
+      svg, p { color: $tailwind ; }
+    }
+
+    &.composer:hover {
+      svg, p { color: $composer ; }
+    }
+
+    &.jquery:hover {
+      svg, p { color: $jquery ; }
+    }
+
+    &.cpanel:hover {
+      svg, p { color: $cpanel ; }
+    }
+  }
 }
 
-.software-skill-inline > i {
-  color: $subTitle;
-}
 
-.software-skill-inline > i:hover {
-  color: $skillsColor;
-}
-.software-skill-inline > p {
-  color: $subTitle;
-  font-size: 10px;
-}
-.software-skill-inline > i:hover ~ p {
-  color: $skillsColor;
-}

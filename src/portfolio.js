@@ -3,7 +3,27 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/lottie/Splash"; // Rename to your file name for custom animation
+// import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import { 
+  SiLaravel, 
+  SiHtml5, 
+  SiCss3, 
+  SiSass, 
+  SiBootstrap, 
+  SiJavascript, 
+  SiReact, 
+  SiNodedotjs, 
+  SiNpm, 
+  SiMysql, 
+  SiPhp,
+  SiGit,
+  SiInertia,
+  SiTailwindcss,
+  SiComposer,
+  SiJquery,
+  SiCpanel
+} from 'react-icons/si';  // Note: changed from simple-icons-react to react-icons/si
 
 // Splash Screen
 
@@ -20,10 +40,10 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Chasan Ali M",
+  username: "Chasan Ali",
   title: "Hi all, I'm Chasan",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Full Stack Software Developer 🚀 having an experience of building Web applications with Laravel / Inertiajs / JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -37,9 +57,11 @@ const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/chasanss/",
   gmail: "chasanalim07@gmail.com",
   gitlab: "https://gitlab.com/chasanalim",
-  facebook: "https://www.facebook.com/sanskuy21",
-  medium: "https://medium.com/@chasanalim",
+  // facebook: "https://www.facebook.com/sanskuy21",
+  // medium: "https://medium.com/@chasanalim",
   instagram: "https://www.instagram.com/chasanss/",
+  telegram: "https://www.t.me/chasanss",
+  discord: "https://discord.gg/2BF8ekwU6F",
   // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
@@ -61,63 +83,78 @@ const skillsSection = {
     )
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
+
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "Laravel",
+      icon: <SiLaravel />
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "PHP",
+      icon: <SiPhp />
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "HTML5",
+      icon: <SiHtml5 />
+    },
+    {
+      skillName: "CSS3", 
+      icon: <SiCss3 />
+    },
+    {
+      skillName: "Sass",
+      icon: <SiSass />
+    },
+    {
+      skillName: "Bootstrap",
+      icon: <SiBootstrap />
+    },
+    {
+      skillName: "Tailwind",
+      icon: <SiTailwindcss />
     },
     {
       skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      icon: <SiJavascript />
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      skillName: "Reactjs",
+      icon: <SiReact />
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "Inertiajs",
+      icon: <SiInertia />
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "Jquery",
+      icon: <SiJquery />
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "Node.js",
+      icon: <SiNodedotjs />
     },
     {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
+      skillName: "NPM",
+      icon: <SiNpm />
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
+      skillName: "Composer",
+      icon: <SiComposer />
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      skillName: "Git",
+      icon: <SiGit />
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "MySQL",
+      icon: <SiMysql />
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "Cpanel",
+      icon: <SiCpanel />
     }
-  ],
+],
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -126,25 +163,25 @@ https://fontawesome.com/icons?d=gallery */
 const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
+    // {
+    //   schoolName: "State Senior High School 1 Gemolong",
+    //   logo: require("./assets/images/gemolong.jpg"),
+    //   subHeader: "Bachelor of Science in Computer Science",
+    //   duration: "September 2012 - April 2015",
+    //   desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
+    //   descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+    // },
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Brawijaya University",
+      logo: require("./assets/images/ub.png"),
+      subHeader: "Bachelor of Computer Science",
+      duration: "September 2015 - February 2020",
+      desc: "Majoring in Informatics Engineering, specifically focusing on Software Engineering.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Researching and developing a web-based event management application for the Indonesian Bonsai Community",
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
+    
   ]
 };
 
@@ -166,7 +203,7 @@ const techStack = {
       progressPercentage: "60%"
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
 // Work experience section
@@ -175,29 +212,40 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "System Analyst ",
+      company: "Dinas Komunikasi dan Informatika",
+      companylogo: require("./assets/images/kominfo.png"),
+      date: "May 2024 – Present",
+      desc: "Designing and analyzing the business processes of all applications developed by the Department of Communication and Informatics, while also contributing to the implementation and coding of several systems, including the following:",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "PPID (Pejabat Pengelola Informasi dan Dokumentasi) application for public information management and documentation.",
+        "SIAPMBAK (Sistem Informasi Antrian Pelayanan Masyarakat Laboratorium Kesehatan Daerah) for managing public service queues at the Regional Health Laboratory.",
+        "SIE (Sistem Informasi Eksekutif) for monitoring and reporting the performance of regional government agencies.",
+        "Banmod dan Pelatihan application for managing training and certification programs for civil servants in the region.",
+        "etc."
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Software Engineer",
+      company: "RSU BANYUMANIK 2 SEMARANG",
+      companylogo: require("./assets/images/rs.png"),
+      date: "November 2020 – April 2024",
+      desc: "Developing the Khanza Hospital Information System (SIMRS) for Electronic Medical Record (EMR) management using Java Swing in NetBeans IDE, integrated with multiple healthcare institution applications.",
+      descBullets: [
+        "Integrated with BPJS Kesehatan systems, including VClaim, Mobile JKN, and Online Queue services to streamline patient administration and health insurance processes.",
+        "Connected with Ministry of Health platforms such as SIRS Online and Satu Sehat to support standardized hospital reporting and national health data synchronization.  "
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Frontend Developer Intern",
+      company: "Monster Group.",
+      companylogo: require("./assets/images/monster.jpg"),
+      date: "September 2025 – Oktober 2025",
+      desc: "Creating a modern web application that highlights front-end development skills through the use of Vue.js.",
+      descBullets: [
+        "Designed and built the front-end of an employee performance evaluation system for corporate use.",
+      ]
+      
     }
   ]
 };

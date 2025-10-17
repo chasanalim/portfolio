@@ -24,15 +24,30 @@ if (USE_GITHUB_DATA === "true") {
   console.log(`Fetching profile data for ${GITHUB_USERNAME}`);
   var data = JSON.stringify({
     query: `
-{
-  user(login:"${GITHUB_USERNAME}") { 
-    name
-    bio
-    avatarUrl
-    location
-    pinnedItems(first: 6, types: [REPOSITORY]) {
-      totalCount
-      edges {
+  {
+    user(login:"${GITHUB_USERNAME}") { 
+      name
+      bio
+      avatarUrl
+      location
+      contributionsCollection {
+        totalCommitContributions
+        totalPullRequestContributions
+        totalIssueContributions
+        totalRepositoryContributions
+        contributionCalendar {
+          totalContributions
+          weeks {
+            contributionDays {
+              contributionCount
+              date
+            }
+          }
+        }
+      }
+      pinnedItems(first: 6, types: [REPOSITORY]) {
+        totalCount
+        edges {
           node {
             ... on Repository {
               name
@@ -53,7 +68,7 @@ if (USE_GITHUB_DATA === "true") {
         }
       }
     }
-}
+  }
 `
   });
   const default_options = {

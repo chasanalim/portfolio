@@ -115,6 +115,30 @@ export default function socialMedia() {
           <span></span>
         </a>
       ) : null}
+      
+      {socialMediaLinks.telegram ? (
+        <a
+          href={socialMediaLinks.telegram}
+          className="icon-button telegram"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-brands fa-telegram"></i>
+          <span></span>
+        </a>
+      ) : null}
+
+      {socialMediaLinks.discord ? (
+        <a
+          href={socialMediaLinks.discord}
+          className="icon-button discord"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-brands fa-discord"></i>
+          <span></span>
+        </a>
+      ) : null}
 
       {socialMediaLinks.kaggle ? (
         <a

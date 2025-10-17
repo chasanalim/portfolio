@@ -8,14 +8,13 @@ export default function SoftwareSkill() {
       <div className="software-skills-main-div">
         <ul className="dev-icons">
           {skillsSection.softwareSkills.map((skills, i) => {
+            const iconClassName = `skill-icon ${skills.skillName.toLowerCase().replace('.', '')}`;
             return (
-              <li
-                key={i}
-                className="software-skill-inline"
-                name={skills.skillName}
-              >
-                <i className={skills.fontAwesomeClassname}></i>
-                <p>{skills.skillName}</p>
+              <li key={i} className="software-skill-inline">
+                <div className={iconClassName} >
+                  {skills.icon}
+                  <p>{skills.skillName}</p>
+                </div>
               </li>
             );
           })}

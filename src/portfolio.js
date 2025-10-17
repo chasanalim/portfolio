@@ -261,29 +261,77 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "My Projects",
+  subtitle: "SOME COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/ppid.png"),
+      projectName: "PPID",
+      projectDesc: "Pejabat Pengelola Informasi dan Dokumentasi",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "http://ppid.kedirikota.go.id"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/dinkes.jpg"),
+      projectName: "SIAPMBAK",
+      projectDesc: "Sistem Informasi Antrian Pelayanan Masyarakat Laboratorium Kesehatan Daerah",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "http://siapmbak.kedirikota.go.id"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/kominfo.png"),
+      projectName: "SIE",
+      projectDesc: "Sistem Informasi Eksekutif",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://sie.kedirikota.go.id"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/rs.png"),
+      projectName: "RSU BANYUMANIK 2",
+      projectDesc: "Website Profile for Hospital and online reservation",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://rsubanyumanik2.com/"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/disperdagin.png"),
+      projectName: "Banmod dan Pelatihan",
+      projectDesc: "An application for registering government training programs and business capital assistance.",
+      footerLink: [
+        {
+          name: "Still In Development",
+          // url: "-"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/yaski.png"),
+      projectName: "SIMRS Khanza Costum",
+      projectDesc: "Developed an open-source electronic medical record (EMR) system that was customized and enhanced internally to support the hospital’s operational requirements.",
+      footerLink: [
+        {
+          name: "Desktop Version",
+          // url: "http://nextu.se/"
         }
       ]
     }
@@ -432,7 +480,7 @@ const twitterDetails = {
   display: true // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,

@@ -5,6 +5,10 @@
   flex-direction: row;
 }
 
+.batas{
+  margin: 0;
+}
+
 .education-card:hover + .education-card-border {
   border-color: $educationCardBorder;
   width: 100%;
@@ -15,7 +19,7 @@
 }
 
 .education-card-border {
-  height: 30px;
+  // height: 30px;
   width: 80%;
   border-top: 2px solid $lightBorder1;
   margin-bottom: 20px;

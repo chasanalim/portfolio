@@ -14,12 +14,24 @@
   margin-left: 50px;
 }
 
-.skills-main-div > * {
+// .skills-main-div > * {
+//   flex: 1;
+//   margin-bottom: 30px;
+// }
+.skills-image-div {
   flex: 1;
-  margin-bottom: 30px;
+  display: flex;              /* aktifkan flexbox di dalamnya */
+  justify-content: center;    /* posisikan gambar di tengah horizontal */
+  align-items: center;    
+}
+
+.skills-text-div {
+  flex: 2;
+  margin-left: 50px;
 }
 
 .skills-image-div > img {
+  margin-top: 300px;
   max-width: 100%;
   height: auto;
 }

@@ -41,7 +41,7 @@ const illustration = {
 
 const greeting = {
   username: "Chasan Ali",
-  title: "Hi all, I'm Chasan",
+  title: "Hi all, I'm Chasan Ali",
   subTitle: emoji(
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web applications with Laravel / Inertiajs / JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks."
   ),
@@ -56,7 +56,7 @@ const socialMediaLinks = {
   github: "https://github.com/chasanalim",
   linkedin: "https://www.linkedin.com/in/chasanss/",
   gmail: "chasanalim07@gmail.com",
-  gitlab: "https://gitlab.com/chasanalim",
+  // gitlab: "https://gitlab.com/chasanalim",
   // facebook: "https://www.facebook.com/sanskuy21",
   // medium: "https://medium.com/@chasanalim",
   instagram: "https://www.instagram.com/chasanss/",
@@ -71,15 +71,17 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "What I do?",
+  subTitle: "Passionate Full Stack Developer eager to explore and master every tech stack.",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Building responsive, and beautiful front-end experiences for the modern web."
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Building powerful Information and Management Systems for your services."
+    ),
+    emoji(
+      "⚡ Analyzing and designing efficient application business processes."
     )
   ],
 
@@ -138,10 +140,10 @@ const skillsSection = {
       skillName: "NPM",
       icon: <SiNpm />
     },
-    {
-      skillName: "Composer",
-      icon: <SiComposer />
-    },
+    // {
+    //   skillName: "Composer",
+    //   icon: <SiComposer />
+    // },
     {
       skillName: "Git",
       icon: <SiGit />
@@ -179,7 +181,9 @@ const educationInfo = {
       desc: "Majoring in Informatics Engineering, specifically focusing on Software Engineering.",
       descBullets: [
         "Researching and developing a web-based event management application for the Indonesian Bonsai Community",
-      ]
+      ],
+      graduationLink:"https://pddikti.kemdiktisaintek.go.id/detail-mahasiswa/-Xd9FXU8PEFRqSx5lmjEDAharCOYNr143R5Reopv5g_9U2YD_0NURnRacXxO0UPbaI48_w==",
+      journalLink: "https://j-ptiik.ub.ac.id/index.php/j-ptiik/article/view/6833"
     }
     
   ]
@@ -261,7 +265,7 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "My Projects",
+  title: "Projects",
   subtitle: "SOME COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {

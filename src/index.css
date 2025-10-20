@@ -6,6 +6,16 @@
     url("./assets/fonts/Agustina.woff") format("woff");
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Amertha Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Amertha Regular"),
+    url("./assets/fonts/Amertha.ttf") format("woff");
+  font-display: swap;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat"),

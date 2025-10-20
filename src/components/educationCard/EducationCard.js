@@ -60,6 +60,28 @@ export default function EducationCard({school}) {
                   <GetDescBullets descBullets={school.descBullets} />
                 </ul>
               </div>
+              <div className="education-text-graduation">
+                <a
+                  className={
+                    isDark ? "dark-mode graduation-link" : "graduation-link"
+                  }
+                  href={school.graduationLink}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  PPDIKTI
+                </a>
+                <a
+                  className={
+                    isDark ? "dark-mode graduation-link" : "graduation-link"
+                  }
+                  href={school.journalLink}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Journal
+                </a>
+              </div>
             </div>
           </div>
         </div>

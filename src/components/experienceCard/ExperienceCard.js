@@ -69,8 +69,8 @@ export default function ExperienceCard({cardInfo, isDark}) {
         <p
           className={
             isDark
-              ? "subTitle experience-text-desc dark-mode-text"
-              : "subTitle experience-text-desc"
+              ? "experience-text-desc dark-mode-text"
+              : "experience-text-desc"
           }
         >
           {cardInfo.desc}

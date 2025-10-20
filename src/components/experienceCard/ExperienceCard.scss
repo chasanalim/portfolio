@@ -114,11 +114,22 @@
 
 .experience-text-desc {
   text-align: center;
+  color: $textColor;
+  font-size: 16px;
+  margin: 0px;
+  padding-top: 1rem;
 }
 
 .experience-text-details {
   padding: 1.5rem;
+  color: $talkCardSubTitle;
+  font-size: 15px;
   margin-top: 2rem;
+}
+
+
+.subTitle {
+  color: $subTitle !important;
 }
 
 /* Media Query */
@@ -153,4 +164,8 @@
   .experience-text-desc {
     font-size: 16px;
   }
+  .subTitle {
+    font-size: 15px !important;
+  }
 }
+

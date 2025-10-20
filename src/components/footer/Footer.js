@@ -3,25 +3,25 @@ import "./Footer.scss";
 import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
 import StyleContext from "../../contexts/StyleContext";
+import ReactGA from "react-ga4";
 
 export default function Footer() {
   const {isDark} = useContext(StyleContext);
+   const handleFooterView = () => {
+    ReactGA.event({
+      category: "Footer",
+      action: "User viewed footer",
+    });
+  };
+
   return (
     <Fade bottom duration={1000} distance="5px">
       <div className="footer-div">
-        {/* <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-          {emoji("Made with ❤️ by DeveloperFolio Team")}
+        <div className="footer-div" onMouseEnter={handleFooterView}>
+        <p className={`footer-text ${isDark ? "dark-mode" : ""}`}>
+          {emoji("👀 Thank you for visit!")}
         </p>
-        <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-          Theme by{" "}
-          <a
-            href="https://github.com/saadpasta/developerFolio"
-            target="_blank"
-            rel="noreferrer"
-          >
-            developerFolio
-          </a>
-        </p> */}
+      </div>
       </div>
     </Fade>
   );

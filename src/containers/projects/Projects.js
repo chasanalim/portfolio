@@ -50,7 +50,7 @@ export default function Projects() {
     return (
       <Suspense fallback={renderLoader()}>
         <div className="main" id="opensource">
-          <h1 className="project-title">My Github Contributions</h1>
+          <h1 className="project-title">Github Contributions</h1>
           {contributions && (
             <GithubContribution
               contribution={contributions}

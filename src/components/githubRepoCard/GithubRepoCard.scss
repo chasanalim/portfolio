@@ -58,7 +58,7 @@
   text-overflow: ellipsis;
   color: $githubRepoCardRepoNameColor;
   margin-bottom: 0.75rem;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 700;
   letter-spacing: -0.5px;
   overflow: hidden;
@@ -71,6 +71,7 @@
 }
 
 .repo-description {
+  font-size: 13px;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;

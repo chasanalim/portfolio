@@ -3,8 +3,10 @@ Certain colors are used for different and multiply types of elements.
 For greater control over colors visit each components .scss file. */
 
 // button colors
-$buttonColor: #55198b;
-$buttonHover: #8c43ce;
+$buttonColor: #198b85;
+$buttonHover: #4dd7e4;
+// $buttonColor: #55198b;
+// $buttonHover: #8c43ce;
 $topButtonHover: #000;
 
 // text colors light theme
@@ -28,7 +30,7 @@ $githubRepoCardColor: rgb(88, 96, 105);
 $githubRepoCardRepoCardStatsColor: rgb(106, 115, 125);
 $githubRepoCardRepoNameColor: rgb(36, 41, 46);
 $githubProfileCardLocationTS: #ffebcd;
-$githubProfileCardBorder: #6c63ff;
+$githubProfileCardBorder: #3fa799;
 
 // light background colors
 $lightBackground1: #fff;
@@ -75,7 +77,7 @@ $appHeaderBG: #282c34;
 
 // misc colors
 $skillsColor: #645beb;
-$appLink: #09d3ac;
+$appLink: #58ddc2;
 
 // social media icons
 $faceBook: #3b5998;
